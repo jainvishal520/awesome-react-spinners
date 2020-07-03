@@ -1,0 +1,24 @@
+{
+  "name": "awesome-react-spinners",
+  "version": "1.0.0",
+  "description": "CSS only spinner for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jainvishal520/awesome-react-spinners.git"
+  },
+  "keywords": [
+    "react",
+    "css",
+    "spinners"
+  ],
+  "author": "Vishal Jain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jainvishal520/awesome-react-spinners/issues"
+  },
+  "homepage": "https://github.com/jainvishal520/awesome-react-spinners#readme"
+}
