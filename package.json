@@ -4,7 +4,8 @@
   "description": "CSS only spinner for react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "eslint '**/*.js' --fix"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/jainvishal520/awesome-react-spinners/issues"
   },
-  "homepage": "https://github.com/jainvishal520/awesome-react-spinners#readme"
+  "homepage": "https://github.com/jainvishal520/awesome-react-spinners#readme",
+  "dependencies": {
+    "-": "0.0.1",
+    "D": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.5"
+  }
 }
