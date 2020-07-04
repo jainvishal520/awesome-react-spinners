@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.css';
 
-const Ellipsis = props => (
+const Ellipsis = (props) => (
   <>
     <style>${`${styles}`}</style>
     <div className="lds-ellipsis">

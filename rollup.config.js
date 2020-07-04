@@ -42,7 +42,7 @@ const common = {
   ]
 };
 
-export default outputs.map(output => ({
+export default outputs.map((output) => ({
   ...common,
   output
 }));
