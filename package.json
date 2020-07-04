@@ -9,7 +9,10 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
-    "lint:fix": "eslint $PWD/'**/*.js' --fix"
+    "lint:fix": "eslint $PWD/'**/*.js' --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "husky": {
     "hooks": {
@@ -38,20 +41,24 @@
   },
   "homepage": "https://github.com/alex996/react-css-spinners#readme",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.0.0",
-    "eslint": "^5.11.0",
+    "babel-jest": "^26.1.0",
+    "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^1.2.1",
+    "jest": "^26.1.0",
     "lint-staged": "^8.1.0",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1",
+    "react-test-renderer": "^16.13.1",
     "rimraf": "^2.6.2",
     "rollup": "^0.68.2",
     "rollup-plugin-babel": "^4.1.0",
@@ -65,5 +72,13 @@
   },
   "engines": {
     "node": ">=8"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.css$": "<rootDir>/mocks/styles.js"
+    }
+  },
+  "dependencies": {
+    "react": "^16.13.1"
   }
 }
