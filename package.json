@@ -1,10 +1,13 @@
 {
-  "name": "react-css-spinners",
-  "version": "1.0.0",
+  "name": "awesome-react-spinners",
+  "version": "1.0.1",
   "description": "CSS-only spinners for React",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -18,7 +21,8 @@
     "storybook": "start-storybook -p 9001 -c storybook",
     "storybook:build": "build-storybook -c storybook",
     "predeploy": "npm run storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "prepublishOnly": "npm run build"
   },
   "husky": {
     "hooks": {
@@ -34,17 +38,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alex996/react-css-spinners.git"
+    "url": "git+https://github.com/jainvishal520/awesome-react-spinners.git"
   },
   "keywords": [
     "react",
     "css",
     "spinners"
   ],
-  "author": "Alex",
+  "author": "Vishal Jain",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alex996/react-css-spinners/issues"
+    "url": "https://github.com/jainvishal520/awesome-react-spinners/issues"
   },
   "homepage": "https://jainvishal520.github.io/awesome-react-spinners/",
   "devDependencies": {
