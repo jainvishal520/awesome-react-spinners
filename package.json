@@ -13,8 +13,10 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:coveralls":"jest --coverage && coveralls < coverage/lcov.info",
-    "test:staged": "jest --findRelatedTests"
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
+    "test:staged": "jest --findRelatedTests",
+    "storybook": "start-storybook -p 9001 -c storybook",
+    "storybook:build": "build-storybook -c storybook"
   },
   "husky": {
     "hooks": {
@@ -47,6 +49,7 @@
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-options": "^5.3.19",
     "babel-jest": "^26.1.0",
     "coveralls": "^3.1.0",
     "eslint": "^5.16.0",
@@ -83,6 +86,9 @@
     }
   },
   "dependencies": {
-    "react": "^16.13.1"
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
