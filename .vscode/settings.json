@@ -2,5 +2,14 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "less.completion.completePropertyWithSemicolon": false,
+  "prettier.semi": false,
+  "css.completion.completePropertyWithSemicolon": false,
+  "files.associations": {},
+  "scss.completion.completePropertyWithSemicolon": false,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove"
 }
